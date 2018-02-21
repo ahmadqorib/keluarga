@@ -1,0 +1,106 @@
+body, html{
+	background-color: #f2f2f2;
+}
+/*kanggo header e*/
+.navbar{
+	border-radius: 0px;
+	border: 0px;
+	background-color: #0088cc;
+}
+.navbar .navbar-brand{
+	color: #FFF;
+}
+.navbar .menu{
+	margin-top: 5px;
+}
+.navbar .menu ul li{
+	background-color: #0099e6;
+	border-radius: 5px;
+}
+.navbar .menu ul li a{
+	color: #FFF;
+}
+.navbar .menu ul .menu-kanan{
+	background-color: #0088cc;
+}
+.navbar .menu ul li a:hover{
+	background-color: #00aaff;
+}
+.navbar .menu ul .menu-kanan a:hover{
+	background-color: #0088cc;
+	color: #e6e6e6;
+}
+/*akhir kanggo header e*/
+
+/*kanggo konten e*/
+.pering{
+	width: 180px;
+	border: 1px solid #800000;
+    color: #800000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    left: 100%;
+    font-size: 12px;
+}
+.pering::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+#tablee a{
+	margin-top: 4px;
+}
+
+table{
+	font-size: 13px;
+}
+
+.panel-detail input[type="text"]{
+	padding: 2px 5px;
+	width: 200px;
+}
+
+.tableDetail tr td{
+	padding: 2px 2px;
+
+}
+
+.ngarep {
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.ngarep table{
+	font-size: 15px;
+}
+
+.ngarep table label{
+	padding: 5px;
+}
+/*akhir kanggo konten e*/
+
+/*Media screen ne*/
+@media screen and (max-width:768px){
+	.pering{
+		border: none;
+	    color: #800000;
+	    text-align: left;
+	    border-radius: 0px;
+	    position: static;
+	    font-size: 12px;
+	}
+	.pering::after{
+		content: none;
+	}
+}
